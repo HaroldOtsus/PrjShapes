@@ -13,4 +13,15 @@ Public MustInherit Class Kujund
         Me.kylgB = kylgB
         Me.kylgC = kylgC
     End Sub
+
+    'Funktsioon tagastab kujundi t66bi
+    Public Function annaTyyp() As String
+        Return tyyp
+    End Function
+
+    'Abstraktne funktsioon kujundi 6mberm66du arvutamiseks
+    Public MustOverride Function leiaYmberMoot() As Double
+
+    'Abstraktne funktsioon kujundi pindala arvutamiseks
+    Public MustOverride Function leiaPindala() As Double
 End Class
