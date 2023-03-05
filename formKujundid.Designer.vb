@@ -86,6 +86,7 @@ Partial Class formKujundid
         '
         'txtYmbermoot
         '
+        Me.txtYmbermoot.Enabled = False
         Me.txtYmbermoot.Location = New System.Drawing.Point(170, 80)
         Me.txtYmbermoot.Name = "txtYmbermoot"
         Me.txtYmbermoot.Size = New System.Drawing.Size(100, 20)
@@ -93,6 +94,7 @@ Partial Class formKujundid
         '
         'txtPindala
         '
+        Me.txtPindala.Enabled = False
         Me.txtPindala.Location = New System.Drawing.Point(170, 122)
         Me.txtPindala.Name = "txtPindala"
         Me.txtPindala.Size = New System.Drawing.Size(100, 20)
