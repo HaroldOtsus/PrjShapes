@@ -38,6 +38,8 @@ Partial Class formKujundid
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.GroupBox3 = New System.Windows.Forms.GroupBox()
+        Me.cbT2psus = New System.Windows.Forms.ComboBox()
+        Me.Label6 = New System.Windows.Forms.Label()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         Me.GroupBox3.SuspendLayout()
@@ -194,11 +196,31 @@ Partial Class formKujundid
         Me.GroupBox3.TabStop = False
         Me.GroupBox3.Text = "Tulemused:"
         '
+        'cbT2psus
+        '
+        Me.cbT2psus.FormattingEnabled = True
+        Me.cbT2psus.Items.AddRange(New Object() {"0", "1", "2", "3"})
+        Me.cbT2psus.Location = New System.Drawing.Point(141, 140)
+        Me.cbT2psus.Name = "cbT2psus"
+        Me.cbT2psus.Size = New System.Drawing.Size(121, 21)
+        Me.cbT2psus.TabIndex = 17
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.Location = New System.Drawing.Point(77, 143)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(45, 13)
+        Me.Label6.TabIndex = 18
+        Me.Label6.Text = "Täpsus:"
+        '
         'formKujundid
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.Label6)
+        Me.Controls.Add(Me.cbT2psus)
         Me.Controls.Add(Me.GroupBox3)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox1)
@@ -210,6 +232,7 @@ Partial Class formKujundid
         Me.GroupBox3.ResumeLayout(False)
         Me.GroupBox3.PerformLayout()
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
 
@@ -229,4 +252,6 @@ Partial Class formKujundid
     Friend WithEvents GroupBox1 As GroupBox
     Friend WithEvents GroupBox2 As GroupBox
     Friend WithEvents GroupBox3 As GroupBox
+    Friend WithEvents cbT2psus As ComboBox
+    Friend WithEvents Label6 As Label
 End Class
