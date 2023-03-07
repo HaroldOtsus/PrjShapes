@@ -36,7 +36,11 @@ Partial Class formKujundid
         Me.btnRuut = New System.Windows.Forms.Button()
         Me.btnRistkylik = New System.Windows.Forms.Button()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.txtKylgC = New System.Windows.Forms.TextBox()
+        Me.Label7 = New System.Windows.Forms.Label()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.btnRoopkulik = New System.Windows.Forms.Button()
+        Me.btnRomb = New System.Windows.Forms.Button()
         Me.GroupBox3 = New System.Windows.Forms.GroupBox()
         Me.cbT2psus = New System.Windows.Forms.ComboBox()
         Me.Label6 = New System.Windows.Forms.Label()
@@ -54,7 +58,7 @@ Partial Class formKujundid
         '
         'txtKylgB
         '
-        Me.txtKylgB.Location = New System.Drawing.Point(56, 62)
+        Me.txtKylgB.Location = New System.Drawing.Point(56, 45)
         Me.txtKylgB.Name = "txtKylgB"
         Me.txtKylgB.Size = New System.Drawing.Size(100, 20)
         Me.txtKylgB.TabIndex = 1
@@ -71,7 +75,7 @@ Partial Class formKujundid
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(28, 65)
+        Me.Label3.Location = New System.Drawing.Point(28, 48)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(22, 13)
         Me.Label3.TabIndex = 4
@@ -140,7 +144,7 @@ Partial Class formKujundid
         '
         'btnRuut
         '
-        Me.btnRuut.Location = New System.Drawing.Point(85, 65)
+        Me.btnRuut.Location = New System.Drawing.Point(85, 51)
         Me.btnRuut.Name = "btnRuut"
         Me.btnRuut.Size = New System.Drawing.Size(75, 23)
         Me.btnRuut.TabIndex = 12
@@ -149,7 +153,7 @@ Partial Class formKujundid
         '
         'btnRistkylik
         '
-        Me.btnRistkylik.Location = New System.Drawing.Point(85, 105)
+        Me.btnRistkylik.Location = New System.Drawing.Point(85, 80)
         Me.btnRistkylik.Name = "btnRistkylik"
         Me.btnRistkylik.Size = New System.Drawing.Size(75, 23)
         Me.btnRistkylik.TabIndex = 13
@@ -158,28 +162,66 @@ Partial Class formKujundid
         '
         'GroupBox1
         '
+        Me.GroupBox1.Controls.Add(Me.txtKylgC)
+        Me.GroupBox1.Controls.Add(Me.Label7)
         Me.GroupBox1.Controls.Add(Me.txtKylgB)
         Me.GroupBox1.Controls.Add(Me.txtKylgA)
         Me.GroupBox1.Controls.Add(Me.Label2)
         Me.GroupBox1.Controls.Add(Me.Label3)
         Me.GroupBox1.Location = New System.Drawing.Point(72, 17)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(200, 100)
+        Me.GroupBox1.Size = New System.Drawing.Size(199, 103)
         Me.GroupBox1.TabIndex = 14
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Algandmed"
         '
+        'txtKylgC
+        '
+        Me.txtKylgC.Location = New System.Drawing.Point(56, 71)
+        Me.txtKylgC.Name = "txtKylgC"
+        Me.txtKylgC.Size = New System.Drawing.Size(100, 20)
+        Me.txtKylgC.TabIndex = 6
+        '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.Location = New System.Drawing.Point(28, 74)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(22, 13)
+        Me.Label7.TabIndex = 5
+        Me.Label7.Text = "h ="
+        '
         'GroupBox2
         '
+        Me.GroupBox2.Controls.Add(Me.btnRoopkulik)
+        Me.GroupBox2.Controls.Add(Me.btnRomb)
         Me.GroupBox2.Controls.Add(Me.btnRuut)
         Me.GroupBox2.Controls.Add(Me.btnKolmnurk)
         Me.GroupBox2.Controls.Add(Me.btnRistkylik)
-        Me.GroupBox2.Location = New System.Drawing.Point(472, 17)
+        Me.GroupBox2.Location = New System.Drawing.Point(473, 17)
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(247, 144)
+        Me.GroupBox2.Size = New System.Drawing.Size(246, 181)
         Me.GroupBox2.TabIndex = 15
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Kujundid"
+        '
+        'btnRoopkulik
+        '
+        Me.btnRoopkulik.Location = New System.Drawing.Point(85, 138)
+        Me.btnRoopkulik.Name = "btnRoopkulik"
+        Me.btnRoopkulik.Size = New System.Drawing.Size(75, 23)
+        Me.btnRoopkulik.TabIndex = 19
+        Me.btnRoopkulik.Text = "Rööpkülik"
+        Me.btnRoopkulik.UseVisualStyleBackColor = True
+        '
+        'btnRomb
+        '
+        Me.btnRomb.Location = New System.Drawing.Point(85, 109)
+        Me.btnRomb.Name = "btnRomb"
+        Me.btnRomb.Size = New System.Drawing.Size(75, 23)
+        Me.btnRomb.TabIndex = 19
+        Me.btnRomb.Text = "Romb"
+        Me.btnRomb.UseVisualStyleBackColor = True
         '
         'GroupBox3
         '
@@ -200,7 +242,7 @@ Partial Class formKujundid
         '
         Me.cbT2psus.FormattingEnabled = True
         Me.cbT2psus.Items.AddRange(New Object() {"0", "1", "2", "3"})
-        Me.cbT2psus.Location = New System.Drawing.Point(141, 140)
+        Me.cbT2psus.Location = New System.Drawing.Point(141, 157)
         Me.cbT2psus.Name = "cbT2psus"
         Me.cbT2psus.Size = New System.Drawing.Size(121, 21)
         Me.cbT2psus.TabIndex = 17
@@ -208,7 +250,7 @@ Partial Class formKujundid
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(77, 143)
+        Me.Label6.Location = New System.Drawing.Point(77, 160)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(45, 13)
         Me.Label6.TabIndex = 18
@@ -254,4 +296,8 @@ Partial Class formKujundid
     Friend WithEvents GroupBox3 As GroupBox
     Friend WithEvents cbT2psus As ComboBox
     Friend WithEvents Label6 As Label
+    Friend WithEvents btnRoopkulik As Button
+    Friend WithEvents btnRomb As Button
+    Friend WithEvents txtKylgC As TextBox
+    Friend WithEvents Label7 As Label
 End Class

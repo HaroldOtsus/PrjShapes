@@ -99,6 +99,8 @@
     </Compile>
     <Compile Include="Nelinurk.vb" />
     <Compile Include="Ristkylik.vb" />
+    <Compile Include="Romb.vb" />
+    <Compile Include="Roopkulik.vb" />
     <Compile Include="Ruut.vb" />
   </ItemGroup>
   <ItemGroup>

@@ -47,4 +47,12 @@
         tootleKujund(New Ristkylik(txtKylgA.Text, txtKylgB.Text))
     End Sub
 
+    Private Sub btnRomb_Click(sender As Object, e As EventArgs) Handles btnRomb.Click
+        tootleKujund(New Romb(txtKylgA.Text, txtKylgC.Text))
+    End Sub
+
+    Private Sub btnRoopkulik_Click(sender As Object, e As EventArgs) Handles btnRoopkulik.Click
+        tootleKujund(New Roopkulik(txtKylgA.Text, txtKylgB.Text, txtKylgC.Text))
+    End Sub
+
 End Class
