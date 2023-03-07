@@ -55,6 +55,7 @@ Partial Class formKujundid
         Me.txtKylgA.Name = "txtKylgA"
         Me.txtKylgA.Size = New System.Drawing.Size(100, 20)
         Me.txtKylgA.TabIndex = 0
+        Me.txtKylgA.Text = "0"
         '
         'txtKylgB
         '
@@ -62,6 +63,7 @@ Partial Class formKujundid
         Me.txtKylgB.Name = "txtKylgB"
         Me.txtKylgB.Size = New System.Drawing.Size(100, 20)
         Me.txtKylgB.TabIndex = 1
+        Me.txtKylgB.Text = "0"
         '
         'Label2
         '
@@ -181,6 +183,7 @@ Partial Class formKujundid
         Me.txtKylgC.Name = "txtKylgC"
         Me.txtKylgC.Size = New System.Drawing.Size(100, 20)
         Me.txtKylgC.TabIndex = 6
+        Me.txtKylgC.Text = "0"
         '
         'Label7
         '
