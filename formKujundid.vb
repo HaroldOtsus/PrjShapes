@@ -32,27 +32,39 @@
 
     Private Sub btnKolmnurk_Click(sender As Object, e As EventArgs) Handles btnKolmnurk.Click
         'Objekt kolmnurga klassist
-        Dim objektKolmnurk As New Kolmnurk(txtKylgA.Text, txtKylgB.Text)
-        tootleKujund(objektKolmnurk)
+
+        If IsNumeric(txtKylgA.Text) And IsNumeric(txtKylgB.Text) = True Then
+            Dim objektKolmnurk As New Kolmnurk(txtKylgA.Text, txtKylgB.Text)
+            tootleKujund(objektKolmnurk)
+        End If
     End Sub
 
     Private Sub btnRuut_Click(sender As Object, e As EventArgs) Handles btnRuut.Click
         'Objekt ruudu klassist
-        Dim objektRuut As New Ruut(txtKylgA.Text)
-        tootleKujund(objektRuut)
+
+        If IsNumeric(txtKylgA.Text) = True Then
+            Dim objektRuut As New Ruut(txtKylgA.Text)
+            tootleKujund(objektRuut)
+        End If
     End Sub
 
     Private Sub btnRistkylik_Click(sender As Object, e As EventArgs) Handles btnRistkylik.Click
         'Otsene v2ljakutse meetodil tootleKujund
-        tootleKujund(New Ristkylik(txtKylgA.Text, txtKylgB.Text))
+        If IsNumeric(txtKylgA.Text) And IsNumeric(txtKylgB.Text) = True Then
+            tootleKujund(New Ristkylik(txtKylgA.Text, txtKylgB.Text))
+        End If
     End Sub
 
     Private Sub btnRomb_Click(sender As Object, e As EventArgs) Handles btnRomb.Click
-        tootleKujund(New Romb(txtKylgA.Text, txtKylgC.Text))
+        If IsNumeric(txtKylgA.Text) And IsNumeric(txtKylgC.Text) = True Then
+            tootleKujund(New Romb(txtKylgA.Text, txtKylgC.Text))
+        End If
     End Sub
 
     Private Sub btnRoopkulik_Click(sender As Object, e As EventArgs) Handles btnRoopkulik.Click
-        tootleKujund(New Roopkulik(txtKylgA.Text, txtKylgB.Text, txtKylgC.Text))
+        If IsNumeric(txtKylgA.Text) And IsNumeric(txtKylgB.Text) And IsNumeric(txtKylgC.Text) = True Then
+            tootleKujund(New Roopkulik(txtKylgA.Text, txtKylgB.Text, txtKylgC.Text))
+        End If
     End Sub
 
 End Class
